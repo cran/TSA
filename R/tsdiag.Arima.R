@@ -1,8 +1,8 @@
-`tsdiag.Arima` <-
+tsdiag.Arima <-
 function (object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE, 
     ...) 
 {
-    `%+%` <- function(a, b) .Call("TSconv", a, b, PACKAGE = "stats")
+    
     opar = par()
     par(mfrow = c(3, 1), mar = c(3, 4, 3, 2) + 0.1, oma = c(1, 
         0, 2, 0))
@@ -36,7 +36,7 @@ function (object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE,
     psiv[seq(ma)] = ma
     if (p1 > 0) 
         psiv = filter(psiv, filter = ar, method = "recursive", 
-            side = 1)
+            sides = 1)
     psiv = psiv[-1]
     test = abs(psiv) < tol
     test = rev(cumprod(rev(test)))
@@ -53,4 +53,3 @@ function (object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE,
     on.exit(par(opar))
     invisible()
 }
-

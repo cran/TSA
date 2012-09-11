@@ -1,4 +1,4 @@
-`tsdiag.TAR` <-
+tsdiag.TAR <-
 function (object, gof.lag,  col = "red", 
     xlab = "t", ...) 
 {
@@ -57,8 +57,7 @@ function (object, gof.lag,  col = "red",
                   file <- file(file, ifelse(append, "a", "w"))
                   on.exit(close(file))
                 }
-            .Internal(cat(list(...), file, sep, fill, labels, 
-                append))
+            cat(..., file=file, sep=sep, fill=fill, labels=labels, append=append)
         }
         invisible(NULL)
     }
@@ -102,4 +101,3 @@ function (object, gof.lag,  col = "red",
     on.exit(par(opar))
     invisible()
 }
-

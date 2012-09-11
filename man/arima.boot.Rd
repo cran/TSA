@@ -4,7 +4,7 @@
 \title{Compute the Bootstrap Estimates of an ARIMA Model} 
 \description{
 This function bootstraps time series according to the fitted ARMA(p,d,q) model supplied by the fitted object arima.fit, and estimate the same model using the
-arima function.}
+arima function. Any bootstrap sample that has problem when fitted with the ARIMA model will be omitted from the final results and all error messages will be suppressed. You can check if there is any fitting problem by running the command geterrmessage().}
 \usage{
 arima.boot(arima.fit, cond.boot = FALSE, is.normal = TRUE, B = 1000, init, ntrans = 100)
 }

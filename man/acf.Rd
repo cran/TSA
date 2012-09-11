@@ -4,10 +4,10 @@
 \title{
 Auto- and Cross- Covariance and -Correlation Function Estimation}
 \description{
-This function is modified from the acf function in the stats package.
+This function calls the acf function in the stats package and processes to drop lag-0 of the acf. It only works for univariate time series, so x below should be 1-dimensional.
 }
 \usage{
-acf(x, lag.max = NULL, type = c("correlation", "covariance", "partial"), 
+acf(x, lag.max = NULL, type = c("correlation", "covariance", "partial")[1], 
 plot = TRUE, na.action = na.fail, demean = TRUE, drop.lag.0 = TRUE, ...)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -34,7 +34,7 @@ An object of class "acf", which is a list with the following elements:
 \item{snames}{ The series names for a multivariate time series.} 
 }
 \references{ ~put references to the literature/web site here ~ }
-\author{Original: Paul Gilbert, Martyn Plummer, B.D. Ripley. Slight modification by Kung-Sik Chan} 
+\author{Original authors of stats:::acf are: Paul Gilbert, Martyn Plummer, B.D. Ripley. This wrapper is written by Kung-Sik Chan} 
 \seealso{\code{\link{plot.acf}}, \code{\link{ARMAacf}} for the exact autocorrelations of a given ARMA process.} 
 \examples{
 data(rwalk)

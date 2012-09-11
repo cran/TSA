@@ -23,7 +23,7 @@ h=h*h
 while(i<=p) {M=cbind(M,zlag(h,i));i=i+1}
 sigma2=mean(r^2)
 M[is.na(M)]=sigma2
-if(p>0) M=filter(M,filter=beta,method='recursive',side=1,init=rep(sigma2,
+if(p>0) M=filter(M,filter=beta,method='recursive',sides=1,init=rep(sigma2,
 length(beta)))
 if(p>0) M=cbind(1/(1-sum(beta)),M) else M=cbind(1,M)
 M=apply(M,2,function(x){x/h})
@@ -60,7 +60,7 @@ h=h*h
 while(i<=p) {M=cbind(M,zlag(h,i));i=i+1}
 sigma2=mean(r^2)
 M[is.na(M)]=sigma2
-if(p>0) M=filter(M,filter=beta,method='recursive',side=1,init=rep(sigma2,
+if(p>0) M=filter(M,filter=beta,method='recursive',sides=1,init=rep(sigma2,
 length(beta)))
 if(p>0) M=cbind(1/(1-sum(beta)),M) else M=cbind(1,M)
 M=apply(M,2,function(x){x/h})

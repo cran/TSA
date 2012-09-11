@@ -14,9 +14,9 @@ function (x, n.ahead = 12, col = "black", ylab = object$series,
         n1 = start(x)
     n2 = end(x)
     x = ts(window(x, start = n1, end = n2), start = n1, end = n2, 
-        freq = frequency(x))
-    y = ts(c(x, pred), start = start(x), freq = frequency(x))
-    z = ts(window(y, start = n2), start = n2, freq = frequency(x))
+        frequency = frequency(x))
+    y = ts(c(x, pred), start = start(x), frequency = frequency(x))
+    z = ts(window(y, start = n2), start = n2, frequency = frequency(x))
     if (!missing(transform)) {
         y = transform(y)
         x = transform(x)

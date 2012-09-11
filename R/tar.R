@@ -1,4 +1,4 @@
-`tar` <-
+tar <-
 function (y, p1, p2, d, is.constant1 = TRUE, is.constant2 = TRUE, 
     transform = "no", center = FALSE, standard = FALSE, estimate.thd = TRUE, 
     threshold, method=c("MAIC","CLS")[1], a = 0.05, b = 0.95, 
@@ -48,7 +48,7 @@ function (..., print = TRUE, file = "", sep = " ", fill = FALSE,
                 file <- file(file, ifelse(append, "a", "w"))
                 on.exit(close(file))
             }
-        .Internal(cat(list(...), file, sep, fill, labels, append))
+         cat(..., file=file, sep=sep, fill=fill, labels=labels, append=append)
     }
     invisible(NULL)
 }
@@ -330,4 +330,3 @@ dxy2[sort.l,]=dxy2
 class(res)="TAR"
 invisible(res)
 }
-

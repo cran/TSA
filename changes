@@ -1,3 +1,17 @@
+9/9/2012:
+1. arima and arimax functions temporarily removed from the package; new versions are planned to be released.
+
+2. acf and plot1.acf substantially rewritten to avoid foreign functions are called.
+
+3. arima.boot function rewritten to avoid copyright issues.
+
+4. fitted.arimax changed to fitted.arima (manual accordingly changed)
+
+5. Minor fixes to many functions to avoid warnings from partial argument matching problem.
+ 
+9/7/2012:
+1. Replace the .Internal function cat in tar and tsdiag.TAR by calling cat directly.
+
 7/31/2010:
 1. fix some bugs in the help manuals.
 2. Fix a typo in harmony.R function:

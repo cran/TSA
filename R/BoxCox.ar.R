@@ -58,7 +58,7 @@ method=c("mle","yule-walker", "burg", "ols", "yw"), ...)
         loglik <- as.vector(xl)
         for (i in 1:length(xl)) if (abs(xl[i]) > 0.00) {
                 if( missing(order)) ar.result=ar((y^xl[i]-1)/xl[i],method=method) else 
-                                   ar.result=ar((y^xl[i]-1)/xl[i],method=method,order=order)
+                                   ar.result=ar((y^xl[i]-1)/xl[i],method=method,order.max=order)
                  n=length(y)-ar.result$order
                  ar.res=ar.result$resid
                  n=length(y)
@@ -66,7 +66,7 @@ method=c("mle","yule-walker", "burg", "ols", "yw"), ...)
                 (xl[i] - 1) * nlngmy}
         else {
                 if( missing(order)) ar.result=ar(log(y),method=method) else 
-                                   ar.result=ar(log(y),method=method,order=order)
+                                   ar.result=ar(log(y),method=method,order.max=order)
                  n=length(y)-ar.result$order
                  ar.res=ar.result$resid
                  n=length(y)
