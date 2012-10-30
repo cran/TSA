@@ -30,6 +30,7 @@ a matrix each row of which consists of the coefficient estimates of
 a bootstrap time-series.}
 \author{Kung-Sik Chan}
 \examples{
+\donttest{
 data(hare)
 arima.hare=arima(sqrt(hare),order=c(3,0,0))
 boot.hare=arima.boot(arima.hare,B=50,init=sqrt(hare)[1:3],ntrans=100)
@@ -47,6 +48,7 @@ period
 })
 hist(period.boot)
 quantile(period.boot,c(0.025,.975))
+}
 }
 \keyword{methods}
 

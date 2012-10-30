@@ -61,8 +61,7 @@ function (object, gof.lag,  col = "red",
         }
         invisible(NULL)
     }
-    opar = par()
-    par(mfrow = c(3, 1), mar = c(3, 4, 3, 2) + 0.1, oma = c(1, 
+    opar=par(mfrow = c(3, 1), mar = c(3, 4, 3, 2) + 0.1, oma = c(1, 
         0, 2, 0))
     dxy1 = object$dxy1
     dxy2 = object$dxy2
@@ -98,6 +97,6 @@ function (object, gof.lag,  col = "red",
     plot(y = BL.v, x = 1:nlag, ylab = "P-values", xlab = "Number of Lags", 
         ylim = range(c(BL.v, 0)), ...)
     abline(h = 0.05, lty = 2, col = col)
-    on.exit(par(opar))
+    par(opar)
     invisible()
 }

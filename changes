@@ -1,3 +1,10 @@
+10/26/2012:
+
+1. revised versions of arima and arimax; fix the order of armafilter function so that the AR operators are applied first in order to avoid creating many NAs. 
+
+2. Fix the warning problem in tsdiag.Arima and tsdiag.TAR.
+
+
 9/9/2012:
 1. arima and arimax functions temporarily removed from the package; new versions are planned to be released.
 

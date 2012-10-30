@@ -1,4 +1,4 @@
-974449ed8b295a8676e280d1d77b4107 *DESCRIPTION
+268fd53d33eba4e3f1ac9eb7fc55ab50 *DESCRIPTION
 728d5f99e6e336ba66f8fad081e5423b *NAMESPACE
 fdf231edcf933f4a3cf6390a1731873a *R/ARMAspec.R
 100cdfb3b0bda44e3dd18e2baf5f887b *R/BoxCox.ar.R
@@ -7,7 +7,9 @@ e791bca7d13b23fea8c958233181f33c *R/Keenan.test.R
 3741da580e6d1339f05ea2c5cfdca695 *R/McLeod.Li.test.R
 56366682119ed55d9611770c918904ac *R/Tsay.test.R
 cc31df4b6e9df49815d88b6635c8fd67 *R/acf.R
+54a5ad54b8221288b7216fd0955c1151 *R/arima.R
 3f29e205fd90409f86304cc8fc6f9d6b *R/arima.boot.R
+813dbb71f2d94740d885fc58cef2f59e *R/arimax.R
 2823afda91db7076afa9688ff4b39a8a *R/armasubsets.R
 1dee7668e0474685bb122140270d9e2f *R/detectAO.R
 baf975212f18d09c997d00a6b48f75f3 *R/detectIO.R
@@ -35,10 +37,10 @@ d12397da7b2dab86c8ff08f3869f7ba7 *R/summary.armasubsets.R
 1772b1ec3d4f6d7985767ec9bf1f1d75 *R/tar.sim.R
 7813594ba5cd46b40d41f96190e5cd2e *R/tar.skeleton.R
 8076d276e6ab32d46750fea5610e112f *R/tlrt.R
-0acda069df6b252be7825aa9241fe244 *R/tsdiag.Arima.R
-e8e85ef9be9cb65d08713a943a13a7a6 *R/tsdiag.TAR.R
+1250aaf8dd3933611165093711fae6c9 *R/tsdiag.Arima.R
+a60ebbac2deb972c52610700845fd5db *R/tsdiag.TAR.R
 44e2c6022468ca9cb8ea953da5bdcd9f *R/zlag.R
-332d113104b6b55d9a4f08b16837543d *changes
+dff0989326f7a35ab32bcb5ca334353b *changes
 37913c817bb1f88cba830bb31529f8cd *data/CREF.rda
 b3b3b9b7cff4198bb224203513c07a70 *data/JJ.rda
 2945b5d4bd4f795987a3b1b68f9b0288 *data/SP.rda
@@ -100,7 +102,7 @@ a0425dcc911f2c4187835fb44bc2c6e5 *man/ARMAspec.Rd
 ba312d9f1576f045bb920e3249f0e41f *man/LB.test.Rd
 4604a2714dc1ad0dcfc717ef10456a65 *man/McLeod.Li.test.Rd
 ca3236a1ccc2be6c416e47208811b81a *man/SP.Rd
-f5ec9e1e07e3e05e1e3314ffa7d78814 *man/TSA-package.Rd
+fff18947f09941b235c8f0e9d022a8be *man/TSA-package.Rd
 248962239e003084fca241759ebff665 *man/Tsay.test.Rd
 fa7239240b6167539210d32f1adc523b *man/acf.Rd
 806dea61ae1fe0b2fa9a4c6f3a2cc176 *man/airmiles.Rd
@@ -108,7 +110,9 @@ fdd1084b67cd2a316c949c3d5843217f *man/airpass.Rd
 f7dc8ee450d9906362dc94ce84ac6257 *man/ar1.2.s.Rd
 5383ca3d776db9b5d76a1c758b94112f *man/ar1.s.Rd
 d6722c3266fe4bf6fe54cbfaa8cccaa8 *man/ar2.s.Rd
-2a8fd292befd2a2fd3b37f9e9dff6808 *man/arima.boot.Rd
+5381ba1c7001885c227dc5b81859814c *man/arima.Rd
+b2ae2f02fd5d49b3f3b543a378d387e8 *man/arima.boot.Rd
+4831850caee95acf64343b6866282096 *man/arimax.Rd
 5b5930bc55f0d06d5f31a61aad27724d *man/arma11.s.Rd
 04df79a7fc61547900fcdf89dccda215 *man/armasubsets.Rd
 5de6597864bb0a35409429445ca78608 *man/beersales.Rd

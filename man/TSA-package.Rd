@@ -10,12 +10,10 @@ Contains R functions and datasets detailed in the book
 \tabular{ll}{
 Package: \tab TSA\cr
 Type: \tab Package\cr
-Version: \tab 0.99\cr
-Date: \tab 2012-9-11\cr
+Version: \tab 1.0\cr
+Date: \tab 2012-10-30\cr
 License:\tab GPL version 2 or newer\cr
 }
 }
-\author{Kung-Sik Chan
-Maintainer: Kung-Sik Chan <kchan@stat.uiowa.edu>
-}
-\keyword{ package }
+\author{Kung-Sik Chan, Brian Ripley}
+\keyword{package}
