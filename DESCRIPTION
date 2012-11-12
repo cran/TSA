@@ -1,8 +1,8 @@
 Package: TSA
 Type: Package
 Title: Time Series Analysis
-Version: 1.0
-Date: 2012-10-30
+Version: 1.01
+Date: 2012-11-12
 Author: Kung-Sik Chan, Brian Ripley
 Maintainer: Kung-Sik Chan <kungsik.chan@gmail.com>
 Depends: R (>= 2.5.1),leaps, locfit, mgcv, tseries
@@ -11,6 +11,6 @@ Description: Contains R functions and datasets detailed in the book
         by Jonathan Cryer and Kung-Sik Chan
 License: GPL (>= 2)
 URL: http://www.stat.uiowa.edu/~kchan/TSA.htm
-Packaged: 2012-10-30 22:25:21 UTC; kchan
+Packaged: 2012-11-13 04:13:25 UTC; kchan
 Repository: CRAN
-Date/Publication: 2012-10-31 07:20:48
+Date/Publication: 2012-11-13 06:55:49

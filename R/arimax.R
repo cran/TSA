@@ -28,7 +28,8 @@
 
 #
 # (arimax) Date: April, 18, 2006
-# Revised: August 15, 2006, Oct, 26, 2012
+# Revised: August 15, 2006; Oct, 26, 2012; Nov 12, 2012
+
 
 deriv=function(u){
 #
@@ -36,9 +37,14 @@ deriv=function(u){
 # of Jones (1993) "Longitudinal Data with Serial Correlation: a state-space approach.
 #
 p=length(u)
-if(p<=1) return(2*exp(-u)/(1+exp(-u))^2)
-A=diag(as.vector(2*exp(-u)/(1+exp(-u))^2))
-pacf=(1-exp(-u))/(1+exp(-u))
+#if(p<=1) return(2*exp(-u)/(1+exp(-u))^2)
+#A=diag(as.vector(2*exp(-u)/(1+exp(-u))^2))
+#pacf=(1-exp(-u))/(1+exp(-u))
+
+if(p<=1) return(4*exp(2*u)/(1+exp(2*u))^2)
+A=diag(as.vector(4*exp(2*u)/(1+exp(2*u))^2))
+pacf=tanh(u)
+
 init=diag(as.vector(rep(1,p)))
 fd=NULL
 for ( i in 1:p) {
@@ -89,7 +95,8 @@ pacfparm=function(phi){
 # compute the transformation from phi to u.
 #
 res=stats:::ARMAacf(ar=phi,lag.max=length(phi),pacf=TRUE)
-log((1+res)/(1-res))
+#log((1+res)/(1-res))
+atanh(res)
 }
 
 transformpar=function(par,arma){
@@ -209,7 +216,8 @@ levinson=function(u){
 #
 # compute u to phi
 #
-pacf=(1-exp(-u))/(1+exp(-u))
+#pacf=(1-exp(-u))/(1+exp(-u))
+pacf=tanh(u)
 p=length(u)
 if (p<=1) return(pacf) else {
 oldphi=pacf
@@ -236,16 +244,16 @@ newphi
         par=trarma$par
 
         Z <- makeARIMA(trarma[[1]], trarma[[2]], Delta, kappa)
-        r=max(length(Z$phi), length(Z$theta)+1)
-        if (r > 1) {
-            T1=Z$T[1:r,1:r]
-            V1=Z$V[1:r,1:r]
-            Z$Pn[1:r, 1:r] <- solve(diag(r*r)-T1%x%T1, as.vector(V1))
-            }
-        else if (length(Z$phi) > 0) 
-            Z$Pn[1, 1] <- 1/(1 - Z$phi^2)
-        else Z$Pn[1, 1] <- 1
-        Z$a[] <- 0
+#        r=max(length(Z$phi), length(Z$theta)+1)
+#        if (r > 1) {
+#            T1=Z$T[1:r,1:r]
+#            V1=Z$V[1:r,1:r]
+#            Z$Pn[1:r, 1:r] <- solve(diag(r*r)-T1%x%T1, as.vector(V1))
+#            }
+#        else if (length(Z$phi) > 0) 
+#            Z$Pn[1, 1] <- 1/(1 - Z$phi^2)
+#        else Z$Pn[1, 1] <- 1
+#        Z$a[] <- 0
          if (ncxreg > 0) {
             nxreg = checkIO(xreg, phi = Z$phi, theta = Z$theta, 
                 Delta = Z$Delta)
@@ -263,16 +271,16 @@ newphi
         trarma <- btrarma(par, arma, trans)
         par=trarma$par
         Z <- makeARIMA(trarma[[1]], trarma[[2]], Delta, kappa)
-        r=max(length(Z$phi), length(Z$theta)+1)
-        if (r > 1) {
-            T1=Z$T[1:r,1:r]
-            V1=Z$V[1:r,1:r]
-            Z$Pn[1:r, 1:r] <- solve(diag(r*r)-T1%x%T1, as.vector(V1))
-            }
-        else if (length(Z$phi) > 0) 
-            Z$Pn[1, 1] <- 1/(1 - Z$phi^2)
-        else Z$Pn[1, 1] <- 1
-        Z$a[] <- 0
+#        r=max(length(Z$phi), length(Z$theta)+1)
+#        if (r > 1) {
+#            T1=Z$T[1:r,1:r]
+#            V1=Z$V[1:r,1:r]
+#            Z$Pn[1:r, 1:r] <- solve(diag(r*r)-T1%x%T1, as.vector(V1))
+#            }
+#        else if (length(Z$phi) > 0) 
+#            Z$Pn[1, 1] <- 1/(1 - Z$phi^2)
+#        else Z$Pn[1, 1] <- 1
+#        Z$a[] <- 0
          if (ncxreg > 0) {
             nxreg = checkIO(xreg, phi = Z$phi, theta = Z$theta, 
                 Delta = Z$Delta)
@@ -341,7 +349,16 @@ newphi
         c(Re(x[-1]), rep(0, q - q0))
     }
 
-
+   if(missing(io) & missing(xtransf) & missing(transfer)) {
+      res=stats:::arima(x=x, order=order, seasonal=seasonal, xreg=xreg, 
+include.mean=include.mean, transform.pars=transform.pars,
+fixed=fixed, init=init, method=method, n.cond=if(!missing(n.cond)) n.cond, optim.control=optim.control,
+kappa=kappa)
+      res$call=match.call()
+      res$aic=res$aic-2
+      return(res)
+}
+    
     series <- deparse(substitute(x))
     if (NCOL(x) > 1) 
         stop("only implemented for univariate time series")
