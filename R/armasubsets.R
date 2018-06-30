@@ -1,7 +1,7 @@
-`armasubsets` <-
+#' @export 
+armasubsets <-
 function (y, nar, nma, y.name = "Y", ar.method = "ols", ...) 
 {
-    require("leaps")
     lab = NULL
     if (nar > 1) 
         lab = c(lab, paste(y.name, 1:nar, sep = "-lag"))

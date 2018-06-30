@@ -1,4 +1,5 @@
-`BoxCox.ar` <-
+#' @export 
+BoxCox.ar <-
 function (y, order, lambda=seq(-2,2,.01), plotit = TRUE,
 method=c("mle","yule-walker", "burg", "ols", "yw"), ...) 
 {

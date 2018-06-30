@@ -1,4 +1,5 @@
-`detectAO` <-
+#' @export 
+detectAO <-
 function (object,alpha=0.05,robust=TRUE) 
 {
 # programmed by Kung-Sik Chan
@@ -24,7 +25,7 @@ function (object,alpha=0.05,robust=TRUE)
 resid=residuals(object)
 piwt=ARMAtoMA(ar=-object$mod$theta,ma=-object$mod$phi,lag.max=length(resid)-1)
 piwt=c(1,piwt)
-omega=filter(c(0*resid[-1],rev(resid)),filter=piwt,sides=1,method='convolution')
+omega=stats::filter(c(0*resid[-1],rev(resid)),filter=piwt,sides=1,method='convolution')
 omega=omega[!is.na(omega)]
 rho2=1/cumsum(piwt^2)
 omega=omega*rho2

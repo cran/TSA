@@ -1,4 +1,5 @@
-`qar.sim` <-
+#' @export 
+qar.sim <-
 function (const = 0, phi0 = 0, phi1 = 0.5, sigma = 1, n = 20, 
     init = 0) 
 {

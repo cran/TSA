@@ -1,3 +1,4 @@
+#' @export 
 arima.boot <-
 function (arima.fit, cond.boot = FALSE, is.normal = TRUE, B = 1000, 
     init, ntrans = 100) 
@@ -53,21 +54,21 @@ function (arima.fit, cond.boot = FALSE, is.normal = TRUE, B = 1000,
         }
         if (is.normal) {
             if (q > 0) 
-                noise = filter(rnorm(n = n + ntrans, mean = 0, 
+                noise = stats::filter(rnorm(n = n + ntrans, mean = 0, 
                   sd = sd), init = rnorm(n = q, mean = 0, sd = sd), 
                   filter = ma, method = "convolution", sides = 1)
             else noise = rnorm(n = n + ntrans, mean = 0, sd = sd)
         }
         else {
             if (q > 0) 
-                noise = filter(sample(residuals, replace = TRUE, 
+                noise = stats::filter(sample(residuals, replace = TRUE, 
                   size = n + ntrans), init = sample(residuals, 
                   size = q, replace = TRUE), filter = ma, method = "convolution", 
                   sides = 1)
             else noise = sample(residuals, size = n + ntrans, 
                 replace = TRUE)
         }
-        boot = filter(noise, filter = ar, method = "recursive", 
+        boot = stats::filter(noise, filter = ar, method = "recursive", 
             init = initial, sides = 1) + intercept
         boot = boot[(ntrans + 1):(n + ntrans)]
         if (cond.boot) 

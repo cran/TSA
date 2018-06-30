@@ -1,4 +1,5 @@
-`tlrt` <-
+#' @export 
+tlrt <-
 function (y, p, d=1, transform = "no",  a = 0.25, b = 0.75,...)
 {
 makedata <-

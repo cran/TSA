@@ -1,4 +1,5 @@
-`skewness` <-
+#' @export 
+skewness <-
 function (x, na.rm = FALSE) 
 {
 sd=function(x,...){mean((x-mean(x,...))^2)^.5}

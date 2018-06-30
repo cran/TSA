@@ -1,4 +1,5 @@
-`tar.sim` <-
+#' @export 
+tar.sim <-
 function (object,ntransient = 500, n = 500,  Phi1, 
     Phi2, thd, d, p, sigma1, sigma2, xstart = rep(0, max(p,d)), e) 
 {

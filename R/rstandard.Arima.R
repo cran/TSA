@@ -1,3 +1,6 @@
-`rstandard.Arima` <-
-function(model,...){residuals(model)/model$sigma^.5}
-
+#' @export
+rstandard.Arima <-
+function(model,...)
+{
+  model$residuals/model$sigma2^.5
+}

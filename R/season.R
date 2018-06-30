@@ -1,4 +1,5 @@
-`season` <-
+#' @export 
+season <-
 function (x, labels) 
 {
     if (!is.ts(x) || frequency(x) == 1) 

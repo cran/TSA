@@ -1,7 +1,6 @@
-`lagplot` <-
+#' @export 
+lagplot <-
 function(x,lag.max=6,deg=1,nn=0.7, method=c("locfit","gam","both")[1]){
-require(locfit)
-require(mgcv)
 par(mfrow=c(3,2),mar=c(3,2,3,2))
 if(method=='gam'){
 for (k in 1:lag.max){

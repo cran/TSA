@@ -1,3 +1,4 @@
+#' @export
 tsdiag.TAR <-
 function (object, gof.lag,  col = "red", 
     xlab = "t", ...) 

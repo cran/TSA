@@ -1,3 +1,4 @@
+#' @export
 `summary.armasubsets` <-
 function (object, all.best = TRUE, matrix = TRUE, matrix.logical = FALSE, 
     df = NULL, ...) 

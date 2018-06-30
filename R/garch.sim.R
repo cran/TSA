@@ -1,4 +1,5 @@
-`garch.sim` <-
+#' @export 
+garch.sim <-
 function(alpha,beta,n=100,rnd=rnorm,ntrans=100,...){
 #
 # simulate a GARCH process

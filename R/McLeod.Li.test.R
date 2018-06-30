@@ -1,4 +1,5 @@
-`McLeod.Li.test` <-
+#' @export 
+McLeod.Li.test <-
 function (object, y, gof.lag, col = "red", omit.initial = TRUE,plot=TRUE, 
     ...) 
 {

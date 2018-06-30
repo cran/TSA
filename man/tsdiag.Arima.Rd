@@ -1,15 +1,15 @@
-\name{tsdiag.Arima}
-\alias{tsdiag.Arima}
-\title{Model Diagnostics for a Fitted ARIMA Model}
+\name{tsdiag.Arimax}
+\alias{tsdiag.Arimax}
+\title{Model Diagnostics for a Fitted ARIMAX Model}
 \description{This function is modified from the tsdiag function of the
 stats package.  
 }
 \usage{
-\method{tsdiag}{Arima}(object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE,...)
+\method{tsdiag}{Arimax}(object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE,...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{object}{a fitted ARIMA model}
+  \item{object}{a fitted ARIMAX model}
   \item{gof.lag}{maximum lag used in ACF and Ljung-Box tests for the residuals}
   \item{tol}{tolerance (default=0.1); see below}
   \item{col}{color of some warning lines in the figures (default=red)}

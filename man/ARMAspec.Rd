@@ -21,7 +21,9 @@ ARMAspec(model, freq = seq(0, 0.5, 0.001), plot = TRUE, ...)
 \author{Kung-Sik Chan}
 \seealso{\code{\link{spec}}}
 \examples{
+\donttest{
 theta=.9 # Reset theta for other MA(1) plots
 ARMAspec(model=list(ma=-theta)) 
+}
 }
 \keyword{methods}

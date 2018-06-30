@@ -1,4 +1,5 @@
-`Keenan.test` <-
+#' @export 
+Keenan.test <-
 function(x,order,...){
 if(missing(order)) order=ar(x,...)$order 
 m=order

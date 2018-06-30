@@ -1,4 +1,5 @@
-`runs` <-
+#' @export 
+runs <-
 function(x,k=0){
 #
 # determine the number of runs with x<=k and x>k

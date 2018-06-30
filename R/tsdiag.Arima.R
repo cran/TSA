@@ -1,4 +1,5 @@
-tsdiag.Arima <-
+#' @export
+tsdiag.Arimax <-
 function (object, gof.lag, tol = 0.1, col = "red", omit.initial = TRUE, 
     ...) 
 {

@@ -1,4 +1,5 @@
-`plot.armasubsets` <-
+#' @export
+plot.armasubsets <-
 function (x, labels = obj$xnames, main = NULL, scale = c("BIC","AICc","AIC", 
     "Cp", "adjR2", "R2"), col = gray(c(seq(0.4, .7, length = 10),.9)),draw.grid=TRUE, 
     axis.at.3=TRUE,...) 

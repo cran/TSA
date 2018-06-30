@@ -1,4 +1,5 @@
-`LB.test` <-
+#' @export 
+LB.test <-
 function (model, lag = 12, type = c("Ljung-Box","Box-Pierce"),no.error=FALSE,
 omit.initial=TRUE) 
 {

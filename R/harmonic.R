@@ -1,4 +1,5 @@
-`harmonic` <-
+#' @export 
+harmonic <-
 function (x, m = 1) 
 {
     if (!is.ts(x) || (2 * m) > frequency(x)) 

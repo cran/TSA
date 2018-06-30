@@ -1,4 +1,5 @@
-`detectIO` <-
+#' @export 
+detectIO <-
 function (object,alpha=0.05,robust=TRUE) 
 {
 # programmed by Kung-Sik Chan

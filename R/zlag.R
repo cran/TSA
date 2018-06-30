@@ -1,4 +1,5 @@
-`zlag` <-
+#' @export 
+zlag <-
 function (x, d = 1) 
 {
     if (d != as.integer(d) || d < 0) 

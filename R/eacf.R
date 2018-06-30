@@ -1,4 +1,5 @@
-`eacf` <-
+#' @export 
+eacf <-
 function (z,ar.max=7,ma.max=13) 
 {
 #

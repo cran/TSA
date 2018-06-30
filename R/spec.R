@@ -1,4 +1,5 @@
-`spec` <-
+#' @export 
+spec <-
 function (x, taper = 0, detrend = FALSE, demean=TRUE,method = c("pgram", "ar"), 
 ci.plot=FALSE,ylim=range(c(lower.conf.band,upper.conf.band)),
 ...) 

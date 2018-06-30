@@ -1,4 +1,5 @@
-`Tsay.test` <-
+#' @export 
+Tsay.test <-
 function(x,order,...){
 if(missing(order)) order=ar(x,...)$order 
 x=as.vector(x)

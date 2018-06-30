@@ -1,4 +1,5 @@
-`tar.skeleton` <-
+#' @export 
+tar.skeleton <-
 function (object, Phi1, Phi2, thd, d, p,ntransient = 500, n = 500, 
 xstart,plot=TRUE,n.skeleton=50) 
 {

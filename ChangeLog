@@ -1,3 +1,13 @@
+6/14/2018:
+
+1. Revised the arimax function to fix a bug related to io. Now IO can be specified either by, e.g., io=c(57) or xreg=data.frame(IO.57=seq(x)==57), assuming x is the time series.
+
+2. Fixed a bug in the prewhiten function.
+
+3. 1. Fix a bug in the tar function so that is.constant1 and is.constant2 work properly
+
+4. Fix namespace problems.
+
 11/12/2012:
 
 1. revised the arimax (arima) function by using the atanh transformation of the pacf, as implemented by stats:::arima.

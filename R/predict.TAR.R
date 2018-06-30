@@ -1,4 +1,5 @@
-`predict.TAR` <-
+#' @export
+predict.TAR <-
 function (object,n.ahead=1,n.sim=1000,...) 
 {
 res=NULL

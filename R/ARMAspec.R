@@ -1,4 +1,5 @@
-`ARMAspec` <-
+#' @export 
+ARMAspec <-
 function (model, freq = seq(0, 0.5, 0.001), plot = TRUE, ...) 
 {
     comp.spec = function(p, ar, freq, period = 1) {

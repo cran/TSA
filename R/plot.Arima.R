@@ -1,4 +1,5 @@
-`plot.Arima` <-
+#' @export
+plot.Arima <-
 function (x, n.ahead = 12, col = "black", ylab = object$series, 
     lty = 2, n1, newxreg, transform, Plot = TRUE, ...) 
 {

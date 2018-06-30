@@ -1,4 +1,5 @@
-`periodogram` <-
+#' @export 
+periodogram <-
 function (y, log = "no", plot = TRUE, ylab = "Periodogram", xlab = "Frequency", 
     lwd = 2, ...) 
 {

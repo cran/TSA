@@ -1,4 +1,5 @@
-`kurtosis` <-
+#' @export 
+kurtosis <-
 function (x, na.rm = FALSE) 
 {
 var=function(x,...){mean((x-mean(x,...))^2)}
