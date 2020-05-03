@@ -1,5 +1,5 @@
 2cbb868642330e4efd76726b7fd09355 *ChangeLog
-c9eee967a5a7ba3c7ef2403336dec728 *DESCRIPTION
+e26f677379cdb774f417914c7ad932b9 *DESCRIPTION
 51f37e15f3604c337ea3dc250b29932d *NAMESPACE
 5491768f90e2292786852680aaf681b1 *R/ARMAspec.R
 3c4d7c10da79ab36d3acb0f27bac767a *R/BoxCox.ar.R
@@ -32,7 +32,7 @@ be1a73b7780325fe33adc1a285f13b68 *R/plot1.acf.R
 a185b5c57427db71a959ea6420e7236e *R/runs.R
 f7a07d8754d16721f15d457d53f8faff *R/season.R
 63ce9743e5ad91cb9f6241810a8b5af3 *R/skewness.R
-22cfcb457ef428e4b83263dccbcc080e *R/spec.R
+b75d63d30804ed3a3be75aba1be2d478 *R/spec.R
 106ef201990ba3e663364ecd29c9b08a *R/summary.armasubsets.R
 6ff5d6bf91f3cd2b1e175f41c481e9cf *R/tar.R
 f8d51ce1a3a199ba7762e98cd61a6ea8 *R/tar.sim.R
@@ -135,7 +135,7 @@ bc453714d9bef99eb5ad44da26e3fa7d *man/euph.Rd
 2f0ecb70c1c592bc45fdde8b5f98f93d *man/explode.s.Rd
 bda435cb4350ba5f10ff73da0e5010c7 *man/fitted.Arima.Rd
 0f0f926998a591d968c1ffa3a1a48ae6 *man/flow.Rd
-c83071bd7c61bc12dfcc627e953f7aa4 *man/gBox.Rd
+9153c957b72287265a2a8cb4ed25f092 *man/gBox.Rd
 e7571765f6608c19f771669277c96b97 *man/garch.sim.Rd
 693f1ad6a0813cf8c9adc2f1390e0e3d *man/gold.Rd
 369dae3afff859e21ed397b54f08887f *man/google.Rd

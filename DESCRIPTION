@@ -1,18 +1,24 @@
 Package: TSA
 Type: Package
 Title: Time Series Analysis
-Version: 1.2
+Version: 1.2.1
 Date: 2018-6-17
 Author: Kung-Sik Chan, Brian Ripley 
-Maintainer: Kung-Sik Chan <kungsik.chan@gmail.com>
+Maintainer: ORPHANED
 Depends: R (>= 2.5.1)
 Imports: leaps, locfit, mgcv
+Suggests: tseries
 Description: Contains R functions and datasets detailed in the book
         "Time Series Analysis with Applications in R (second edition)" by Jonathan Cryer and Kung-Sik Chan.
 License: GPL (>= 2)
 URL: http://www.stat.uiowa.edu/~kchan/TSA.htm
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-06-17 20:10:06 UTC; kchan
+Packaged: 2020-05-03 08:02:46 UTC; ripley
 Repository: CRAN
-Date/Publication: 2018-06-30 21:10:56 UTC
+Date/Publication: 2020-05-03 08:56:55 UTC
+X-CRAN-Original-Maintainer: Kung-Sik Chan <kungsik.chan@gmail.com>
+X-CRAN-Comment: Orphaned and corrected in 2020-05-03 as check problems
+        were not corrected despite reminders.
+ .
+ \donttest, if(<length > 1>)

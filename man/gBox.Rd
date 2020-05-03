@@ -1,6 +1,5 @@
 \name{gBox}
 \alias{gBox}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{Generalized Portmanteau Tests for GARCH Models}
 \description{
 Perform a goodness-of-fit test for the GARCH model by checking whether the 
@@ -16,6 +15,7 @@ based on absolute residuals}
   \item{plot}{logical variable, if TRUE, the p-values of the tests are plotted}
 }
 \value{
+  Marked invisible, with components:
   \item{lags}{lags in the input}
   \item{pvalue}{a vector of p-values of the tests}
   \item{method}{method used}
@@ -24,13 +24,11 @@ based on absolute residuals}
 \references{"Time Series Analysis, with Applications in R" by J.D. Cryer and K.S. Chan}
 \author{Kung-Sik Chan}
 \examples{
-\donttest{
-# library(tseries) # need to uncomment this line when running the example
+library(tseries)
 data(CREF)
 r.cref=diff(log(CREF))*100
 m1=garch(x=r.cref,order=c(1,1))
 summary(m1)
-#gBox(m1,x=r.cref,method='squared')
-}
+print(gBox(m1,x=r.cref,method='squared'))
 }
 \keyword{methods}

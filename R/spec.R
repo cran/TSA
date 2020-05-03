@@ -4,6 +4,7 @@ function (x, taper = 0, detrend = FALSE, demean=TRUE,method = c("pgram", "ar"),
 ci.plot=FALSE,ylim=range(c(lower.conf.band,upper.conf.band)),
 ...) 
 {
+    method <- match.arg(method)
     x = ts(x, frequency = 1)
 if(!ci.plot) {if(missing(ylim))   sp=switch(match.arg(method), pgram = spec.pgram(x, taper = taper, 
         detrend = detrend, demean = demean,...), ar = spec.ar(x,...))  else    
