@@ -1,5 +1,5 @@
-2cbb868642330e4efd76726b7fd09355 *ChangeLog
-e26f677379cdb774f417914c7ad932b9 *DESCRIPTION
+eed6ee96cf592e9e7ad13dbf14648c93 *ChangeLog
+09ae8c7917f56788e36f92c7b646e0a2 *DESCRIPTION
 51f37e15f3604c337ea3dc250b29932d *NAMESPACE
 5491768f90e2292786852680aaf681b1 *R/ARMAspec.R
 3c4d7c10da79ab36d3acb0f27bac767a *R/BoxCox.ar.R
@@ -32,7 +32,7 @@ be1a73b7780325fe33adc1a285f13b68 *R/plot1.acf.R
 a185b5c57427db71a959ea6420e7236e *R/runs.R
 f7a07d8754d16721f15d457d53f8faff *R/season.R
 63ce9743e5ad91cb9f6241810a8b5af3 *R/skewness.R
-b75d63d30804ed3a3be75aba1be2d478 *R/spec.R
+1df4b32b0ba13b07b4f5860c37878d46 *R/spec.R
 106ef201990ba3e663364ecd29c9b08a *R/summary.armasubsets.R
 6ff5d6bf91f3cd2b1e175f41c481e9cf *R/tar.R
 f8d51ce1a3a199ba7762e98cd61a6ea8 *R/tar.sim.R
@@ -102,7 +102,7 @@ aa41962776e1a62b34692fb1228243f7 *man/ARMAspec.Rd
 ba312d9f1576f045bb920e3249f0e41f *man/LB.test.Rd
 4604a2714dc1ad0dcfc717ef10456a65 *man/McLeod.Li.test.Rd
 ca3236a1ccc2be6c416e47208811b81a *man/SP.Rd
-6aac6738633bc35d61cde256d5c7130d *man/TSA-package.Rd
+0c3b5986fb630fac84fed3fef8ee3a64 *man/TSA-package.Rd
 248962239e003084fca241759ebff665 *man/Tsay.test.Rd
 fa7239240b6167539210d32f1adc523b *man/acf.Rd
 806dea61ae1fe0b2fa9a4c6f3a2cc176 *man/airmiles.Rd
@@ -135,7 +135,7 @@ bc453714d9bef99eb5ad44da26e3fa7d *man/euph.Rd
 2f0ecb70c1c592bc45fdde8b5f98f93d *man/explode.s.Rd
 bda435cb4350ba5f10ff73da0e5010c7 *man/fitted.Arima.Rd
 0f0f926998a591d968c1ffa3a1a48ae6 *man/flow.Rd
-9153c957b72287265a2a8cb4ed25f092 *man/gBox.Rd
+93bdcfd94a7bdad34aa12a8492d8299c *man/gBox.Rd
 e7571765f6608c19f771669277c96b97 *man/garch.sim.Rd
 693f1ad6a0813cf8c9adc2f1390e0e3d *man/gold.Rd
 369dae3afff859e21ed397b54f08887f *man/google.Rd
@@ -168,7 +168,7 @@ aa4d41ca6a9f657c5745aa4d0651959c *man/runs.Rd
 6e6078c069fe6e820daaf2c378ba58bd *man/rwalk.Rd
 2c6d268f39b27de59ed558599753350f *man/season.Rd
 67015cb48e26666bb84d19ace4107236 *man/skewness.Rd
-bf49ff6ae48ac233e2742b3b3b33a79c *man/spec.Rd
+7c5e6358af439a7b82ae310bdb307c34 *man/spec.Rd
 a407a8ee9f13ff4d77875f1cc9e0fc0a *man/spots.Rd
 0b0998994aa88d456d0089967017bf11 *man/spots1.Rd
 5a12821b892744e4e55942eab38c5a96 *man/star.Rd

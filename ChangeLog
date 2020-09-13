@@ -1,3 +1,6 @@
+9/9/2020:
+Fix a typo in spec and a typo in the help manual of gbox
+
 6/14/2018:
 
 1. Revised the arimax function to fix a bug related to io. Now IO can be specified either by, e.g., io=c(57) or xreg=data.frame(IO.57=seq(x)==57), assuming x is the time series.

@@ -8,7 +8,7 @@ function or the spec.ar function in the stats pacakge.  Note that the seasonal a
 the data, if it exists, will be removed, for our preferred way of presenting
 the output.} 
 \usage{ spec(x, taper = 0, detrend = FALSE, demean = TRUE, method = c("pgram", 
-    "ar"), ci.plot = FALSE, ylim = range(c(lower.conf.band, upper.conf.band)), 
+    "ar")[1], ci.plot = FALSE, ylim = range(c(lower.conf.band, upper.conf.band)), 
     ...) }
 %- maybe also 'usage' for other objects documented here.
 \arguments{A list that contains the following:

@@ -10,8 +10,8 @@ Contains R functions and datasets detailed in the book
 \tabular{ll}{
 Package: \tab TSA\cr
 Type: \tab Package\cr
-Version: \tab 1.01\cr
-Date: \tab 2012-11-12\cr
+Version: \tab 1.3\cr
+Date: \tab 2020-9-9\cr
 License:\tab GPL version 2 or newer\cr
 }
 }
