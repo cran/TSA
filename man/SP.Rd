@@ -1,7 +1,7 @@
 \name{SP}
 \alias{SP}
 \docType{data}
-\title{Quarterly Standard \& Poor's Composite Index of stock price values /
+\title{Quarterly Standard & Poor's Composite Index of stock price values /
 time series}
 \description{
 Quarterly S&P Composite Index, 1936Q1 - 1977Q4.

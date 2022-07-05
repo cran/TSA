@@ -10,7 +10,8 @@ For backward compatitibility, the function is also named arima.
 Note in the computation of AIC, the number of parameters excludes the noise
 variance. This function is heavily based on 
 the arima function of the stats core
-of R.}
+of R, see the help page of this function for details on arguments
+\code{x} to \code{kappa}.}
 \usage{
 arima(x, order = c(0, 0, 0), seasonal = list(order = c(0, 0, 0), period = NA),
  xreg = NULL, include.mean = TRUE, transform.pars = TRUE, fixed = NULL, 
@@ -34,10 +35,6 @@ ensure stationarity}
 analysis}
   \item{optim.control}{control parameters for the optimization procedure}
   \item{kappa}{prior variance; used in dealing with initial values}
-\item{}{
-All of the above parameters have the same usage as those in the arima function.
-Please check the help manual of the arima function. Below are new options.
-}
   \item{io}{a list of time points at which the model may have an innovative outlier. The time point of the outlier can be given either as absolute time point
  or as c(a,b), i.e. at the b-th 'month' of the a-th 'year' where each 
  year has frequency(x) months, assuming x is a time series.

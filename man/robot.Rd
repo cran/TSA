@@ -12,7 +12,7 @@ series of planned exercises many times.}
 }
 \source{
 Personal communication
-from William F. Fulkerson, Deere \& Co. Technical Center,
+from William F. Fulkerson, Deere & Co. Technical Center,
 Moline, Illinois.
 }
 \examples{

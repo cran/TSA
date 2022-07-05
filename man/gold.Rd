@@ -3,7 +3,7 @@
 \docType{data}
 \title{Gold Price / time series} 
 \description{
- Daily price of gold (in \$ per troy ounce) for the 252 trading days of 2005}
+ Daily price of gold (in $ per troy ounce) for the 252 trading days of 2005}
 \usage{data(gold)}
 \format{
   The format is:

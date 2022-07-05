@@ -1,10 +1,10 @@
 \name{deere1}
 \alias{deere1}
 \docType{data}
-\title{Deviations of an industrial process at Deere \& Co. -- Series 1} 
+\title{Deviations of an industrial process at Deere & Co. -- Series 1} 
 \description{
 82 consecutive values for the amount of deviation (in 0.000025 inch
-units) from a specified target value in an industrial machining process at Deere \& Co.
+units) from a specified target value in an industrial machining process at Deere & Co.
 }
 \usage{data(deere1)}
 \format{
@@ -13,7 +13,7 @@ units) from a specified target value in an industrial machining process at Deere
 }
 \source{
 Personal communication from William F.
-Fulkerson, Deere \& Co. Technical Center, Moline, Illinois.
+Fulkerson, Deere & Co. Technical Center, Moline, Illinois.
 }
 \examples{
 data(deere1)

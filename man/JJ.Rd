@@ -1,9 +1,9 @@
 \name{JJ}
 \alias{JJ}
 \docType{data}
-\title{Quarterly earnings per share for the Johnson \& Johnson Company}
+\title{Quarterly earnings per share for the Johnson & Johnson Company}
 \description{Quarterly earnings per share for 1960Q1 to 1980Q4 of the U.S. company,
-Johnson \& Johnson, Inc.}
+Johnson & Johnson, Inc.}
 \usage{data(JJ)}
 \format{
   The format is:

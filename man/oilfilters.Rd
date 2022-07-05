@@ -5,7 +5,7 @@
 Monthly sales to dealers of a specialty oil
 filter/time series}
 \description{
-Monthly wholesale specialty oil filters sales, Deere \& Co, 07/1983 -
+Monthly wholesale specialty oil filters sales, Deere & Co, 07/1983 -
 06/1987.
 }
 \usage{data(oilfilters)}
@@ -16,7 +16,7 @@ Monthly wholesale specialty oil filters sales, Deere \& Co, 07/1983 -
  - attr(*, "start")= num [1:2] 1987    7
 }
 \source{
-Data courtesy of William F. Fulkerson, Deere \& Company, Technical Center, Moline,
+Data courtesy of William F. Fulkerson, Deere & Company, Technical Center, Moline,
 Illinois.}
 \examples{
 data(oilfilters)
